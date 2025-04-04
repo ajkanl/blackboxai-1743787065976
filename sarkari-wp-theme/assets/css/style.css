@@ -1,0 +1,50 @@
+/* Main theme styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1e40af;
+}
+
+/* Header styles */
+.site-header {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Navigation styles */
+.main-navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.main-navigation a {
+    padding: 0.5rem 1rem;
+}
+
+/* Card styles */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-navigation ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
